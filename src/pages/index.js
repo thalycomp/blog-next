@@ -1,5 +1,7 @@
+import MainPosts from '../components/MainPosts';
+
 export default function Home() {
   return (
-    <div>Olá</div>
+    <MainPosts />
   )
 }
