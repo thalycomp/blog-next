@@ -15,9 +15,9 @@ function Header() {
           <h1>Blog | Thalyta Alencar </h1>
         </TitleContainer>
         <SocialContainer>
-          <a href="">
+          {/*<a href="">
             <p>thalycomp@gmail.com</p>
-          </a>
+          </a>*/}
           <a href="">
             <img src="icons/github.svg" alt="icon-github"/>
           </a>
