@@ -1,11 +1,17 @@
 import React from 'react';
+import CardPost from '../CardsPosts';
 
-import { Container } from './styles';
+import { 
+  Container, 
+  Content 
+} from './styles';
 
 function MainPosts() {
   return (
     <Container>
-ooooo
+      <Content>
+        <CardPost />
+      </Content>
     </Container>
   );
 }
