@@ -12,8 +12,10 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
+    position: relative;
     background: #fff;
     font-size: 1.8rem;
+    height: 100%;
   }
 
   a {

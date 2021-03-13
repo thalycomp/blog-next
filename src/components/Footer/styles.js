@@ -15,6 +15,9 @@ export const Container = styled.footer`
   font-size: 1.6rem;
   display: flex;
 
+  position: absolute;
+  bottom: 0;
+
   flex-direction: column;
 
   align-items: center;

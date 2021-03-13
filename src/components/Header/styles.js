@@ -32,6 +32,8 @@ export const Container = styled.div`
 export const TitleContainer = styled.section`
   flex: 1;
   h1 {
+    color: #fff;
+    /*
       background: linear-gradient(264.51deg, #EA5DAD 10.04%, #C2A0FD 47.63%, #9867F0 59.03%, #3BF0E4 69.96%);  transition: width .3s;
       background-position: 58% 50%;
       background-size: 500%;
@@ -54,7 +56,7 @@ export const TitleContainer = styled.section`
         100% {
           background-position: 58% 50%;
         }
-      }
+      }*/
     }
 `;
 
