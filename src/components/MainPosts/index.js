@@ -8,11 +8,14 @@ import {
 
 function MainPosts() {
   return (
-    <Container>
+    <>
+      <CardPost />
+    {/*<Container>
       <Content>
         <CardPost />
       </Content>
-    </Container>
+    </Container>*/}
+    </>
   );
 }
 

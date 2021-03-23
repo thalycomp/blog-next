@@ -4,10 +4,12 @@ import Link from 'next/link';
 import { 
   ListPost,
   ItemPost,
+  Container
  } from './styles';
 
 function CardsPosts() {
   return (
+    <Container>
     <ListPost>
         <ItemPost>
           <Link href="/post">
@@ -42,6 +44,7 @@ function CardsPosts() {
           </Link>
         </ItemPost>
     </ListPost>
+    </Container>
   );
 }
 

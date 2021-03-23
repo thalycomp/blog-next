@@ -1,19 +1,17 @@
 import { ThemeProvider } from 'styled-components'
 import { GlobalStyles } from '../styles/global';
-import { theme } from '../styles/theme';
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Container from '../components/Container';
 
 export default function MyApp({ Component, pageProps }) {
   return (
-    <>
+    <Container>
       <GlobalStyles />
-      <ThemeProvider theme={theme}>
-        <Header />
-        <Component {...pageProps} />
-        <Footer />
-      </ThemeProvider>
-    </>
+      <Header />
+      <Component {...pageProps} />
+      <Footer />
+    </Container>
   )
 }

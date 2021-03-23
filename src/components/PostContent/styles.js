@@ -6,8 +6,8 @@ export const Container = styled.main`
   @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
   font-family: 'Ubuntu', sans-serif;
 
-  width: 90rem;
-  height: 100%;
+  width: 90%;
+  max-width: 800px;
 
   color: #121212;
 
@@ -26,9 +26,10 @@ export const Content = styled.main`
 
     img {
       margin-bottom: 2rem;
-      width: 100%;
 
-      max-width: 100%;
+      width: 100%;      
+      min-width: 250px;
+
       height: auto;
     }
   }
@@ -50,5 +51,6 @@ export const Content = styled.main`
     font-size: 1.8rem;
     width: 80vw;
     max-width: 800px;
+    line-height: 3.5rem;
   }
 `;

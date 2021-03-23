@@ -1,21 +1,37 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
+
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
 
+  html, body {
+    height: 100vh;
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
   html {
     font-size: 62.5%;
   }
 
+  @media (max-width: 585px) {
+      html {
+        font-size: 40%;
+      }
+  }
+
+  @media (max-width: 400px) {
+      html {
+        font-size: 38%;
+      }
+  }
+
   body {
-    position: relative;
-    background: #fff;
-    font-size: 1.8rem;
-    height: 100%;
+    font-size: 1.6rem;
   }
 
   a {
