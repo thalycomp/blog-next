@@ -35,6 +35,13 @@ export const TitleContainer = styled.section`
   h1 {
     color: #fff;
     font-size: 2.5rem;
+    cursor: pointer;
+
+    transition: opacity 300ms ease-in-out;
+
+    &:hover {
+      opacity: 0.7;
+    }
     /*
       background: linear-gradient(264.51deg, #EA5DAD 10.04%, #C2A0FD 47.63%, #9867F0 59.03%, #3BF0E4 69.96%);  transition: width .3s;
       background-position: 58% 50%;

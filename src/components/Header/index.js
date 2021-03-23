@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 import { 
   Container, 
@@ -12,16 +13,18 @@ function Header() {
     <Container>
       <header>
         <TitleContainer>
-          <h1>Blog | Thalyta Alencar </h1>
+          <Link href="/">
+            <h1>Blog | Thalyta Alencar </h1>
+          </Link>
         </TitleContainer>
         <SocialContainer>
           {/*<a href="">
             <p>thalycomp@gmail.com</p>
           </a>*/}
-          <a href="">
+          <a href="http://github.com/thalycomp" target="_blank" rel="noopener noreferrer">
             <img src="icons/github.svg" alt="icon-github"/>
           </a>
-          <a href="">
+          <a href="https://www.linkedin.com/in/thalyta-a-de-carvalho-19324a134/" target="_blank">
             <img src="icons/linkedin.svg" alt="icon-linkedin"/>
           </a>
         </SocialContainer>
