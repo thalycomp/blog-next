@@ -1,16 +1,25 @@
-import { ThemeProvider } from 'styled-components'
 import { GlobalStyles } from '../styles/global';
-
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
-export default function MyApp({ Component, pageProps }) {
+const MyApp = ({Component, pageProps}) =>{
   return (
     <>
-      <GlobalStyles />
       <Header />
-      <Component {...pageProps} />
+      <GlobalStyles />
+      <Component {...pageProps}/>
       <Footer />
     </>
-  )
+  );
 }
+
+MyApp.getInitialProps = async ({Component, ctx}) => {
+  const pageProps = Component.getInitialProps ? await Component.getInitialProps(ctx) : {};
+  if (Object.keys(pageProps).length > 0) {
+    return {pageProps};
+  } else {
+    return {};
+  }
+};
+
+export default MyApp;

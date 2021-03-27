@@ -1,21 +1,28 @@
 import React from 'react';
-import CardPost from '../CardsPosts';
+import Link from 'next/link';
 
 import { 
-  Container, 
-  Content 
-} from './styles';
+  ListPost,
+  ItemPost,
+  Container
+ } from './styles';
 
-function MainPosts() {
+function MainPosts({ posts }) {
   return (
-    <>
-      <CardPost />
-    {/*<Container>
-      <Content>
-        <CardPost />
-      </Content>
-    </Container>*/}
-    </>
+    <Container>
+    <ListPost>
+      {posts.map(post => (
+        <ItemPost key={post.id}>
+          <Link href={post.slug}>
+            <a>
+              <img src={post.image.url} alt={post.title}/>
+              <h3>{post.title}</h3>
+            </a>
+          </Link>
+        </ItemPost>
+      ))}
+    </ListPost>
+    </Container>
   );
 }
 
