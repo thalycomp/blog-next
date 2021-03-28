@@ -13,7 +13,7 @@ function MainPosts({ posts }) {
     <ListPost>
       {posts.map(post => (
         <ItemPost key={post.id}>
-          <Link href='/post/[slug]' as={`/post/${slug}`}>
+          <Link href="/post/[slug]" as={`/post/${post.slug}`}>
             <a>
               <img src={post.image.url} alt={post.title}/>
               <h3>{post.title}</h3>
