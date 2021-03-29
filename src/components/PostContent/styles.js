@@ -22,7 +22,12 @@ export const Content = styled.main`
   }
 
   div {
-    width: 60vw;
+    img {
+      width: 100%;
+      height: 100%;
+      max-height: 300px;
+      object-fit: cover;
+    }
 
     img {
       margin-bottom: 2rem;
