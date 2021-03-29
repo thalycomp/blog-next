@@ -34,7 +34,7 @@ export const Content = styled.main`
     }
   }
   
-  span {
+  em {
     display: block;
     padding-bottom: 1.2rem;
     border-bottom: 1px solid #eee;
@@ -42,12 +42,12 @@ export const Content = styled.main`
     width: 50%;
 
     color: #999;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 
     margin-bottom: 2rem;
   }
 
-  p {
+  article {
     font-size: 1.8rem;
     width: 80vw;
     max-width: 800px;
