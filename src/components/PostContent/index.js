@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 import { 
   Container,
@@ -11,6 +12,9 @@ function PostContent({ post }) {
   return (
   <Container>
     <Content>
+      <Link href="/">
+        <a>Voltar | </a>
+      </Link>
       <h1>{post.title}</h1>
       <div>
         <img src={post.image.formats.medium.url} alt={post.image.alternativeText}/>

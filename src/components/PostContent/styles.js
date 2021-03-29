@@ -19,6 +19,16 @@ export const Content = styled.main`
 
   h1 { 
     margin-bottom: 3rem;
+    margin-top: 1.5rem;
+  }
+
+  a {
+    color: #999;
+    text-transform: uppercase;
+
+    font-size: 1.2rem;
+
+    cursor: pointer;
   }
 
   div {
